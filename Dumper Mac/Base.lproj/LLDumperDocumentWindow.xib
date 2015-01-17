@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LLDumperDocumentWindowController">
+            <connections>
+                <outlet property="executableLoadingContentView" destination="BB1-DX-rdI" id="KW4-Df-kTj"/>
+                <outlet property="executableLoadingViewController" destination="0gR-7V-BT3" id="Kn2-Cx-j1O"/>
+                <outlet property="headerDetailsContentView" destination="BgW-Fd-9id" id="pla-ml-XNB"/>
+                <outlet property="headerDetailsViewController" destination="wHT-Vz-RsW" id="d4o-xn-cZf"/>
+                <outlet property="headerSplitView" destination="1L6-AV-GDN" id="qTr-4L-OTF"/>
+                <outlet property="headersListContentView" destination="c3q-Tq-aAU" id="d4L-Eq-Dgv"/>
+                <outlet property="headersListViewController" destination="e4w-ag-gwU" id="b8d-1b-DWl"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Dumper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="600" height="460"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="600" height="200"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="460"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+        <viewController nibName="LLDumperExecutableLoadingView" id="0gR-7V-BT3" customClass="LLDumperExecutableLoadingViewController">
+            <connections>
+                <outlet property="delegate" destination="-2" id="xV3-6S-7dR"/>
+            </connections>
+        </viewController>
+        <viewController nibName="LLDumperHeaderListView" id="e4w-ag-gwU" customClass="LLDumperHeaderListViewController"/>
+        <viewController nibName="LLDumperHeaderDetailsView" id="wHT-Vz-RsW" customClass="LLDumperHeaderDetailsViewController"/>
+        <splitView autosaveName="HeadersSplitView" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-AV-GDN">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="460"/>
+            <subviews>
+                <customView fixedFrame="YES" id="c3q-Tq-aAU">
+                    <rect key="frame" x="0.0" y="0.0" width="241" height="460"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </customView>
+                <customView fixedFrame="YES" id="BgW-Fd-9id">
+                    <rect key="frame" x="242" y="0.0" width="358" height="460"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </customView>
+            </subviews>
+            <holdingPriorities>
+                <real value="300"/>
+                <real value="200"/>
+            </holdingPriorities>
+            <connections>
+                <outlet property="delegate" destination="-2" id="2ES-rY-aAG"/>
+            </connections>
+        </splitView>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="BB1-DX-rdI">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="460"/>
+        </customView>
+    </objects>
+</document>

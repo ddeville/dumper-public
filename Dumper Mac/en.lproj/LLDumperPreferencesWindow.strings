@@ -1,0 +1,15 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "1"; */
+"1.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "Color Scheme:"; ObjectID = "68r-Wr-reD"; */
+"68r-Wr-reD.title" = "Color Scheme:";
+
+/* Class = "NSMenuItem"; title = "Dark"; ObjectID = "GsA-6R-JL0"; */
+"GsA-6R-JL0.title" = "Dark";
+
+/* Class = "NSMenuItem"; title = "Light"; ObjectID = "Wtp-ap-Ion"; */
+"Wtp-ap-Ion.title" = "Light";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "uzw-uz-vAL"; */
+"uzw-uz-vAL.title" = "OtherViews";

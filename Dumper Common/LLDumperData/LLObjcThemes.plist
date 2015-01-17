@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>identifier</key>
+		<string>C5F4FB2C-1A6E-4817-95DD-769944417D61</string>
+		<key>name</key>
+		<string>Dumper Dark</string>
+		<key>editable</key>
+		<false/>
+		<key>backgroundColor</key>
+		<string>57, 57, 57, 1.0</string>
+		<key>selectionColor</key>
+		<string>39, 39, 39, 1.0</string>
+		<key>plainColor</key>
+		<string>247, 247, 247, 1.0</string>
+		<key>attributeColor</key>
+		<string>242, 144, 130, 1.0</string>
+		<key>keywordColor</key>
+		<string>214, 136, 67, 1.0</string>
+		<key>classColor</key>
+		<string>215, 194, 144, 1.0</string>
+		<key>commentColor</key>
+		<string>121, 121, 121, 1.0</string>
+		<key>preprocessorColor</key>
+		<string>174, 101, 50, 1.0</string>
+		<key>stringColor</key>
+		<string>175, 201, 119, 1.0</string>
+	</dict>
+	<dict>
+		<key>identifier</key>
+		<string>88F3CA9C-04B7-4E0D-905C-BCAF939632A3</string>
+		<key>name</key>
+		<string>Dumper Light</string>
+		<key>editable</key>
+		<false/>
+		<key>backgroundColor</key>
+		<string>255, 250, 245, 1.0</string>
+		<key>selectionColor</key>
+		<string>181 213 255 1.0</string>
+		<key>plainColor</key>
+		<string>0, 0, 0, 1.0</string>
+		<key>attributeColor</key>
+		<string>184, 51, 161, 1.0</string>
+		<key>keywordColor</key>
+		<string>184, 51, 161, 1.0</string>
+		<key>classColor</key>
+		<string>80, 129, 135, 1.0</string>
+		<key>commentColor</key>
+		<string>0, 131, 18, 1.0</string>
+		<key>preprocessorColor</key>
+		<string>119, 73, 45, 1.0</string>
+		<key>stringColor</key>
+		<string>207, 49, 37, 1.0</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>@interface</string>
+	<string>@end</string>
+	<string>@implementation</string>
+	<string>@protocol</string>
+	<string>@class</string>
+	<string>@public</string>
+	<string>@protected</string>
+	<string>@private</string>
+	<string>@property</string>
+	<string>@try</string>
+	<string>@throw</string>
+	<string>@catch</string>
+	<string>@finally</string>
+	<string>@synthesize</string>
+	<string>@dynamic</string>
+	<string>@selector</string>
+	<string>@optional</string>
+	<string>@required</string>
+</array>
+</plist>

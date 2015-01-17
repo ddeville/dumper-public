@@ -1,0 +1,1147 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D780BCB185FCB7E0099CEEE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6D780BC9185FCB7E0099CEEE /* Credits.rtf */; };
+		6D780BCF185FCBA40099CEEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D780BCD185FCBA40099CEEE /* InfoPlist.strings */; };
+		6D838F3317A6F7C60066B02B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838F3217A6F7C60066B02B /* Cocoa.framework */; };
+		6D838F5217A6F7C60066B02B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838F5117A6F7C60066B02B /* XCTest.framework */; };
+		6D838F5317A6F7C60066B02B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838F3217A6F7C60066B02B /* Cocoa.framework */; };
+		6D9777F31A6A946100EC0AF3 /* ClassDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9777DA1A6A941700EC0AF3 /* ClassDump.framework */; };
+		6D9777F41A6A946100EC0AF3 /* LLDumperData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9777EA1A6A943700EC0AF3 /* LLDumperData.framework */; };
+		6D9777F51A6A947400EC0AF3 /* LLDumperData.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9777EA1A6A943700EC0AF3 /* LLDumperData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D9777F61A6A948200EC0AF3 /* ClassDump.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9777DA1A6A941700EC0AF3 /* ClassDump.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D9F77AA1905419400745AFD /* NSURL+LLDumperExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9F77A91905419400745AFD /* NSURL+LLDumperExtensions.m */; };
+		6DA9AD52185FC8CA0079122E /* LLDumperTests-Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD51185FC8CA0079122E /* LLDumperTests-Constants.m */; };
+		6DA9AD54185FC8CE0079122E /* LLDumperClassDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD53185FC8CE0079122E /* LLDumperClassDumpTests.m */; };
+		6DA9AD56185FC9360079122E /* empty_fmw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA9AD55185FC9360079122E /* empty_fmw.framework */; };
+		6DA9AD5B185FCA3A0079122E /* LLDumperApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD5A185FCA3A0079122E /* LLDumperApplication.m */; };
+		6DA9AD65185FCA500079122E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AD63185FCA500079122E /* MainMenu.xib */; };
+		6DA9AD69185FCA610079122E /* LLDumperWelcomeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AD67185FCA610079122E /* LLDumperWelcomeWindow.xib */; };
+		6DA9AD6D185FCA710079122E /* LLDumperWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD6C185FCA710079122E /* LLDumperWelcomeWindowController.m */; };
+		6DA9AD70185FCA790079122E /* LLDumperRecentDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD6F185FCA790079122E /* LLDumperRecentDocument.m */; };
+		6DA9AD77185FCA910079122E /* LLDumperBorderedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD72185FCA910079122E /* LLDumperBorderedScrollView.m */; };
+		6DA9AD78185FCA910079122E /* LLDumperColoredBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD74185FCA910079122E /* LLDumperColoredBackgroundView.m */; };
+		6DA9AD79185FCA910079122E /* LLDumperSelectableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD76185FCA910079122E /* LLDumperSelectableTableView.m */; };
+		6DA9AD7C185FCAA10079122E /* LLDumperPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD7B185FCAA10079122E /* LLDumperPreferencesWindowController.m */; };
+		6DA9AD7F185FCAAA0079122E /* LLDumperPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AD7D185FCAAA0079122E /* LLDumperPreferencesWindow.xib */; };
+		6DA9AD84185FCAB60079122E /* LLDumperDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD82185FCAB60079122E /* LLDumperDocument.m */; };
+		6DA9AD87185FCAC10079122E /* LLDumperHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD86185FCAC10079122E /* LLDumperHeader.m */; };
+		6DA9AD8B185FCAD10079122E /* LLDumperDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD89185FCAD10079122E /* LLDumperDocumentWindowController.m */; };
+		6DA9AD8E185FCADB0079122E /* LLDumperDocumentWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AD8C185FCADB0079122E /* LLDumperDocumentWindow.xib */; };
+		6DA9AD92185FCAE80079122E /* LLDumperExecutableLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD91185FCAE80079122E /* LLDumperExecutableLoadingViewController.m */; };
+		6DA9AD95185FCAF30079122E /* LLDumperExecutableLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9AD93185FCAF30079122E /* LLDumperExecutableLoadingView.xib */; };
+		6DA9AD99185FCAFE0079122E /* LLDumperDropZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD98185FCAFE0079122E /* LLDumperDropZoneView.m */; };
+		6DA9ADA0185FCB100079122E /* LLDumperHeaderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD9B185FCB100079122E /* LLDumperHeaderDetailsViewController.m */; };
+		6DA9ADA1185FCB100079122E /* LLDumperHeaderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD9D185FCB100079122E /* LLDumperHeaderListViewController.m */; };
+		6DA9ADA2185FCB100079122E /* LLDumperTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9AD9F185FCB100079122E /* LLDumperTableView.m */; };
+		6DA9ADA7185FCB210079122E /* LLDumperHeaderDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADA3185FCB210079122E /* LLDumperHeaderDetailsView.xib */; };
+		6DA9ADA8185FCB210079122E /* LLDumperHeaderListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADA5185FCB210079122E /* LLDumperHeaderListView.xib */; };
+		6DA9ADB0185FCB3E0079122E /* Dumper-Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9ADAC185FCB3E0079122E /* Dumper-Constants.m */; };
+		6DA9ADB1185FCB3E0079122E /* Dumper-Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9ADAE185FCB3E0079122E /* Dumper-Defaults.m */; };
+		6DA9ADB2185FCB3E0079122E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9ADAF185FCB3E0079122E /* main.m */; };
+		6DA9ADB5185FCB500079122E /* Dumper.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADB3185FCB500079122E /* Dumper.iconset */; };
+		6DA9ADB6185FCB500079122E /* DumperDocument.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADB4185FCB500079122E /* DumperDocument.iconset */; };
+		6DA9ADBC185FCB5B0079122E /* c-header_Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADB7185FCB5B0079122E /* c-header_Icon.icns */; };
+		6DA9ADBD185FCB5B0079122E /* dropzone_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADB8185FCB5B0079122E /* dropzone_down.png */; };
+		6DA9ADBE185FCB5B0079122E /* dropzone_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADB9185FCB5B0079122E /* dropzone_down@2x.png */; };
+		6DA9ADBF185FCB5B0079122E /* dropzone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADBA185FCB5B0079122E /* dropzone.png */; };
+		6DA9ADC0185FCB5B0079122E /* dropzone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9ADBB185FCB5B0079122E /* dropzone@2x.png */; };
+		6DEF2266185FC5BF00FCFB55 /* app_as_a_file.app in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2256185FC56000FCFB55 /* app_as_a_file.app */; };
+		6DEF2267185FC5C200FCFB55 /* empty_app.app in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2257185FC56000FCFB55 /* empty_app.app */; };
+		6DEF2269185FC5C700FCFB55 /* only_c in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2259185FC56000FCFB55 /* only_c */; };
+		6DEF226A185FC5CE00FCFB55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DEF2261185FC57000FCFB55 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D838F5417A6F7C60066B02B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D838F2717A6F7C60066B02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D838F2E17A6F7C60066B02B;
+			remoteInfo = Dumper;
+		};
+		6D9777D51A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013D1F1113A5AE5A00BF0A67;
+			remoteInfo = MachObjC;
+		};
+		6D9777D71A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01EB825F13A590D9003EDE60;
+			remoteInfo = "class-dump";
+		};
+		6D9777D91A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DCC313617AD24E7000E4A23;
+			remoteInfo = ClassDump;
+		};
+		6D9777DB1A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEA959C17AD872C002D079A;
+			remoteInfo = "ClassDump Service";
+		};
+		6D9777DD1A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013D1EFB13A5A0F100BF0A67;
+			remoteInfo = deprotect;
+		};
+		6D9777DF1A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01B02CFF13A5B0DC0047BC53;
+			remoteInfo = formatType;
+		};
+		6D9777E11A6A941700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0165B8B11827137D00CC647F;
+			remoteInfo = UnitTests;
+		};
+		6D9777E91A6A943700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777E31A6A943700EC0AF3 /* Dumper Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEF2211185FB5B800FCFB55;
+			remoteInfo = LLDumperData;
+		};
+		6D9777EF1A6A944400EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777E31A6A943700EC0AF3 /* Dumper Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DEF2210185FB5B800FCFB55;
+			remoteInfo = LLDumperData;
+		};
+		6D9777F11A6A944700EC0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DCC313517AD24E7000E4A23;
+			remoteInfo = ClassDump;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D21B12017B018FF006ED2F0 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8BDE0317AD3D6500805AAA /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D9777F61A6A948200EC0AF3 /* ClassDump.framework in Copy Frameworks */,
+				6D9777F51A6A947400EC0AF3 /* LLDumperData.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D21B15317B01B0F006ED2F0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6D780BCA185FCB7E0099CEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = "Dumper Mac/en.lproj/Credits.rtf"; sourceTree = SOURCE_ROOT; };
+		6D780BCC185FCB9A0099CEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Dumper Mac/Info.plist"; sourceTree = SOURCE_ROOT; };
+		6D780BCE185FCBA40099CEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		6D780BD1185FCBAB0099CEEE /* Dumper.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Dumper.entitlements; path = "Dumper Mac/Dumper.entitlements"; sourceTree = SOURCE_ROOT; };
+		6D838F2F17A6F7C60066B02B /* Dumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dumper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D838F3217A6F7C60066B02B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6D838F3517A6F7C60066B02B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6D838F3617A6F7C60066B02B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6D838F3717A6F7C60066B02B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6D838F5017A6F7C60066B02B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D838F5117A6F7C60066B02B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "class-dump.xcodeproj"; path = "externals/class-dump/class-dump.xcodeproj"; sourceTree = "<group>"; };
+		6D9777E31A6A943700EC0AF3 /* Dumper Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Dumper Common.xcodeproj"; sourceTree = "<group>"; };
+		6D9F77A81905419400745AFD /* NSURL+LLDumperExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+LLDumperExtensions.h"; path = "Dumper Mac/NSURL+LLDumperExtensions.h"; sourceTree = SOURCE_ROOT; };
+		6D9F77A91905419400745AFD /* NSURL+LLDumperExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+LLDumperExtensions.m"; path = "Dumper Mac/NSURL+LLDumperExtensions.m"; sourceTree = SOURCE_ROOT; };
+		6D9F77FB19056CE800745AFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DA9AD50185FC8CA0079122E /* LLDumperTests-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LLDumperTests-Constants.h"; path = "Tests/LLDumperTests-Constants.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD51185FC8CA0079122E /* LLDumperTests-Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LLDumperTests-Constants.m"; path = "Tests/LLDumperTests-Constants.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD53185FC8CE0079122E /* LLDumperClassDumpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperClassDumpTests.m; path = Tests/LLDumperClassDumpTests.m; sourceTree = SOURCE_ROOT; };
+		6DA9AD55185FC9360079122E /* empty_fmw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = empty_fmw.framework; path = Tests/empty_fmw.framework; sourceTree = SOURCE_ROOT; };
+		6DA9AD59185FCA3A0079122E /* LLDumperApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperApplication.h; path = "Dumper Mac/LLDumperApplication.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD5A185FCA3A0079122E /* LLDumperApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperApplication.m; path = "Dumper Mac/LLDumperApplication.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD64185FCA500079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/MainMenu.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9AD66185FCA560079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/MainMenu.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9AD68185FCA610079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperWelcomeWindow.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9AD6A185FCA660079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperWelcomeWindow.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9AD6B185FCA710079122E /* LLDumperWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperWelcomeWindowController.h; path = "Dumper Mac/LLDumperWelcomeWindowController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD6C185FCA710079122E /* LLDumperWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperWelcomeWindowController.m; path = "Dumper Mac/LLDumperWelcomeWindowController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD6E185FCA790079122E /* LLDumperRecentDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperRecentDocument.h; path = "Dumper Mac/LLDumperRecentDocument.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD6F185FCA790079122E /* LLDumperRecentDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperRecentDocument.m; path = "Dumper Mac/LLDumperRecentDocument.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD71185FCA910079122E /* LLDumperBorderedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperBorderedScrollView.h; path = "Dumper Mac/LLDumperBorderedScrollView.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD72185FCA910079122E /* LLDumperBorderedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperBorderedScrollView.m; path = "Dumper Mac/LLDumperBorderedScrollView.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD73185FCA910079122E /* LLDumperColoredBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperColoredBackgroundView.h; path = "Dumper Mac/LLDumperColoredBackgroundView.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD74185FCA910079122E /* LLDumperColoredBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperColoredBackgroundView.m; path = "Dumper Mac/LLDumperColoredBackgroundView.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD75185FCA910079122E /* LLDumperSelectableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperSelectableTableView.h; path = "Dumper Mac/LLDumperSelectableTableView.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD76185FCA910079122E /* LLDumperSelectableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperSelectableTableView.m; path = "Dumper Mac/LLDumperSelectableTableView.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD7A185FCAA10079122E /* LLDumperPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperPreferencesWindowController.h; path = "Dumper Mac/LLDumperPreferencesWindowController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD7B185FCAA10079122E /* LLDumperPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperPreferencesWindowController.m; path = "Dumper Mac/LLDumperPreferencesWindowController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD7E185FCAAA0079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperPreferencesWindow.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9AD80185FCAAD0079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperPreferencesWindow.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9AD81185FCAB60079122E /* LLDumperDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperDocument.h; path = "Dumper Mac/LLDumperDocument.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD82185FCAB60079122E /* LLDumperDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperDocument.m; path = "Dumper Mac/LLDumperDocument.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD83185FCAB60079122E /* LLDumperDocument+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LLDumperDocument+Private.h"; path = "Dumper Mac/LLDumperDocument+Private.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD85185FCAC10079122E /* LLDumperHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperHeader.h; path = "Dumper Mac/LLDumperHeader.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD86185FCAC10079122E /* LLDumperHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperHeader.m; path = "Dumper Mac/LLDumperHeader.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD88185FCAD10079122E /* LLDumperDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperDocumentWindowController.h; path = "Dumper Mac/LLDumperDocumentWindowController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD89185FCAD10079122E /* LLDumperDocumentWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperDocumentWindowController.m; path = "Dumper Mac/LLDumperDocumentWindowController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD8A185FCAD10079122E /* LLDumperDocumentWindowController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LLDumperDocumentWindowController+Private.h"; path = "Dumper Mac/LLDumperDocumentWindowController+Private.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD8D185FCADB0079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperDocumentWindow.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9AD8F185FCADE0079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperDocumentWindow.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9AD90185FCAE80079122E /* LLDumperExecutableLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperExecutableLoadingViewController.h; path = "Dumper Mac/LLDumperExecutableLoadingViewController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD91185FCAE80079122E /* LLDumperExecutableLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperExecutableLoadingViewController.m; path = "Dumper Mac/LLDumperExecutableLoadingViewController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD94185FCAF30079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperExecutableLoadingView.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9AD96185FCAF60079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperExecutableLoadingView.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9AD97185FCAFE0079122E /* LLDumperDropZoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperDropZoneView.h; path = "Dumper Mac/LLDumperDropZoneView.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD98185FCAFE0079122E /* LLDumperDropZoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperDropZoneView.m; path = "Dumper Mac/LLDumperDropZoneView.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9A185FCB100079122E /* LLDumperHeaderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperHeaderDetailsViewController.h; path = "Dumper Mac/LLDumperHeaderDetailsViewController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9B185FCB100079122E /* LLDumperHeaderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperHeaderDetailsViewController.m; path = "Dumper Mac/LLDumperHeaderDetailsViewController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9C185FCB100079122E /* LLDumperHeaderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperHeaderListViewController.h; path = "Dumper Mac/LLDumperHeaderListViewController.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9D185FCB100079122E /* LLDumperHeaderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperHeaderListViewController.m; path = "Dumper Mac/LLDumperHeaderListViewController.m"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9E185FCB100079122E /* LLDumperTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLDumperTableView.h; path = "Dumper Mac/LLDumperTableView.h"; sourceTree = SOURCE_ROOT; };
+		6DA9AD9F185FCB100079122E /* LLDumperTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLDumperTableView.m; path = "Dumper Mac/LLDumperTableView.m"; sourceTree = SOURCE_ROOT; };
+		6DA9ADA4185FCB210079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperHeaderDetailsView.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9ADA6185FCB210079122E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Dumper Mac/Base.lproj/LLDumperHeaderListView.xib"; sourceTree = SOURCE_ROOT; };
+		6DA9ADA9185FCB290079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperHeaderListView.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAA185FCB2F0079122E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Dumper Mac/en.lproj/LLDumperHeaderDetailsView.strings"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAB185FCB3E0079122E /* Dumper-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Dumper-Constants.h"; path = "Dumper Mac/Dumper-Constants.h"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAC185FCB3E0079122E /* Dumper-Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Dumper-Constants.m"; path = "Dumper Mac/Dumper-Constants.m"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAD185FCB3E0079122E /* Dumper-Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Dumper-Defaults.h"; path = "Dumper Mac/Dumper-Defaults.h"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAE185FCB3E0079122E /* Dumper-Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Dumper-Defaults.m"; path = "Dumper Mac/Dumper-Defaults.m"; sourceTree = SOURCE_ROOT; };
+		6DA9ADAF185FCB3E0079122E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Dumper Mac/main.m"; sourceTree = SOURCE_ROOT; };
+		6DA9ADB3185FCB500079122E /* Dumper.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Dumper.iconset; path = "Dumper Mac/Dumper.iconset"; sourceTree = SOURCE_ROOT; };
+		6DA9ADB4185FCB500079122E /* DumperDocument.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = DumperDocument.iconset; path = "Dumper Mac/DumperDocument.iconset"; sourceTree = SOURCE_ROOT; };
+		6DA9ADB7185FCB5B0079122E /* c-header_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "c-header_Icon.icns"; path = "Dumper Mac/c-header_Icon.icns"; sourceTree = SOURCE_ROOT; };
+		6DA9ADB8185FCB5B0079122E /* dropzone_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropzone_down.png; path = "Dumper Mac/dropzone_down.png"; sourceTree = SOURCE_ROOT; };
+		6DA9ADB9185FCB5B0079122E /* dropzone_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropzone_down@2x.png"; path = "Dumper Mac/dropzone_down@2x.png"; sourceTree = SOURCE_ROOT; };
+		6DA9ADBA185FCB5B0079122E /* dropzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropzone.png; path = "Dumper Mac/dropzone.png"; sourceTree = SOURCE_ROOT; };
+		6DA9ADBB185FCB5B0079122E /* dropzone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropzone@2x.png"; path = "Dumper Mac/dropzone@2x.png"; sourceTree = SOURCE_ROOT; };
+		6DEF2256185FC56000FCFB55 /* app_as_a_file.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = app_as_a_file.app; path = Tests/app_as_a_file.app; sourceTree = SOURCE_ROOT; };
+		6DEF2257185FC56000FCFB55 /* empty_app.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = empty_app.app; path = Tests/empty_app.app; sourceTree = SOURCE_ROOT; };
+		6DEF2259185FC56000FCFB55 /* only_c */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = only_c; path = Tests/only_c; sourceTree = SOURCE_ROOT; };
+		6DEF225E185FC56800FCFB55 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		6DEF2262185FC57000FCFB55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Tests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		6DFBB4AA1910517400D4DE07 /* dumper.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = dumper.1; path = dumper_cli/dumper.1; sourceTree = SOURCE_ROOT; };
+		6DFBB4AB1910517400D4DE07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = dumper_cli/main.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D838F2C17A6F7C60066B02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D838F3317A6F7C60066B02B /* Cocoa.framework in Frameworks */,
+				6D9777F31A6A946100EC0AF3 /* ClassDump.framework in Frameworks */,
+				6D9777F41A6A946100EC0AF3 /* LLDumperData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D838F4D17A6F7C60066B02B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D838F5317A6F7C60066B02B /* Cocoa.framework in Frameworks */,
+				6D838F5217A6F7C60066B02B /* XCTest.framework in Frameworks */,
+				6DA9AD56185FC9360079122E /* empty_fmw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D21B11F17B015EC006ED2F0 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF2256185FC56000FCFB55 /* app_as_a_file.app */,
+				6DEF2257185FC56000FCFB55 /* empty_app.app */,
+				6DA9AD55185FC9360079122E /* empty_fmw.framework */,
+				6DEF2259185FC56000FCFB55 /* only_c */,
+			);
+			name = "Test Data";
+			sourceTree = "<group>";
+		};
+		6D468A4017B01FA400779CD7 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD50185FC8CA0079122E /* LLDumperTests-Constants.h */,
+				6DA9AD51185FC8CA0079122E /* LLDumperTests-Constants.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6D6CC07C1864A8D1008C37A7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD59185FCA3A0079122E /* LLDumperApplication.h */,
+				6DA9AD5A185FCA3A0079122E /* LLDumperApplication.m */,
+				6DA9AD63185FCA500079122E /* MainMenu.xib */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		6D6CC07D1864A8D8008C37A7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6D97B62D17AA63630019CDAF /* Welcome */,
+				6D97B62717AA615A0019CDAF /* Document */,
+				6DC9717917AD9C6A00275B58 /* Preferences */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		6D789CCF17AD02E9001534DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9ADB7185FCB5B0079122E /* c-header_Icon.icns */,
+				6DA9ADB8185FCB5B0079122E /* dropzone_down.png */,
+				6DA9ADB9185FCB5B0079122E /* dropzone_down@2x.png */,
+				6DA9ADBA185FCB5B0079122E /* dropzone.png */,
+				6DA9ADBB185FCB5B0079122E /* dropzone@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6D789CD017AD02ED001534DD /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9ADB3185FCB500079122E /* Dumper.iconset */,
+				6DA9ADB4185FCB500079122E /* DumperDocument.iconset */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		6D838F2617A6F7C60066B02B = {
+			isa = PBXGroup;
+			children = (
+				6D838F3817A6F7C60066B02B /* Dumper */,
+				6D9F77FD19056CE900745AFD /* CLI Tool */,
+				6D838F5617A6F7C60066B02B /* Tests */,
+				6D838F6617A6F8D40066B02B /* Externals */,
+				6D838F3117A6F7C60066B02B /* Frameworks */,
+				6D838F3017A6F7C60066B02B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D838F3017A6F7C60066B02B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D838F2F17A6F7C60066B02B /* Dumper.app */,
+				6D838F5017A6F7C60066B02B /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D838F3117A6F7C60066B02B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D21B15317B01B0F006ED2F0 /* SenTestingKit.framework */,
+				6D838F3217A6F7C60066B02B /* Cocoa.framework */,
+				6D838F5117A6F7C60066B02B /* XCTest.framework */,
+				6D9F77FB19056CE800745AFD /* Foundation.framework */,
+				6D838F3417A6F7C60066B02B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D838F3417A6F7C60066B02B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D838F3517A6F7C60066B02B /* AppKit.framework */,
+				6D838F3617A6F7C60066B02B /* CoreData.framework */,
+				6D838F3717A6F7C60066B02B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6D838F3817A6F7C60066B02B /* Dumper */ = {
+			isa = PBXGroup;
+			children = (
+				6D6CC07C1864A8D1008C37A7 /* Application */,
+				6D6CC07D1864A8D8008C37A7 /* User Interface */,
+				6D9F77A71905416900745AFD /* Helpers */,
+				6D97B6AA17AA690C0019CDAF /* Other Sources */,
+				6D838F3917A6F7C60066B02B /* Supporting Files */,
+				6D97B62517AA61330019CDAF /* Resources */,
+			);
+			path = Dumper;
+			sourceTree = "<group>";
+		};
+		6D838F3917A6F7C60066B02B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D780BCC185FCB9A0099CEEE /* Info.plist */,
+				6D780BCD185FCBA40099CEEE /* InfoPlist.strings */,
+				6D780BD1185FCBAB0099CEEE /* Dumper.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D838F5617A6F7C60066B02B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD53185FC8CE0079122E /* LLDumperClassDumpTests.m */,
+				6D468A4017B01FA400779CD7 /* Other Sources */,
+				6D21B11F17B015EC006ED2F0 /* Test Data */,
+				6D838F5717A6F7C60066B02B /* Supporting Files */,
+			);
+			name = Tests;
+			path = DumperTests;
+			sourceTree = "<group>";
+		};
+		6D838F5717A6F7C60066B02B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF225E185FC56800FCFB55 /* Info.plist */,
+				6DEF2261185FC57000FCFB55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D838F6617A6F8D40066B02B /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				6D9777E31A6A943700EC0AF3 /* Dumper Common.xcodeproj */,
+				6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		6D841C9917AEB257003D324C /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD73185FCA910079122E /* LLDumperColoredBackgroundView.h */,
+				6DA9AD74185FCA910079122E /* LLDumperColoredBackgroundView.m */,
+				6DA9AD71185FCA910079122E /* LLDumperBorderedScrollView.h */,
+				6DA9AD72185FCA910079122E /* LLDumperBorderedScrollView.m */,
+				6DA9AD75185FCA910079122E /* LLDumperSelectableTableView.h */,
+				6DA9AD76185FCA910079122E /* LLDumperSelectableTableView.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		6D841CA417AEB46A003D324C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD6E185FCA790079122E /* LLDumperRecentDocument.h */,
+				6DA9AD6F185FCA790079122E /* LLDumperRecentDocument.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6D9777CB1A6A941600EC0AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D9777D61A6A941700EC0AF3 /* libMachObjC.a */,
+				6D9777D81A6A941700EC0AF3 /* class-dump */,
+				6D9777DA1A6A941700EC0AF3 /* ClassDump.framework */,
+				6D9777DC1A6A941700EC0AF3 /* com.ddeville.classdumpservice.xpc */,
+				6D9777DE1A6A941700EC0AF3 /* deprotect */,
+				6D9777E01A6A941700EC0AF3 /* formatType */,
+				6D9777E21A6A941700EC0AF3 /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9777E41A6A943700EC0AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D9777EA1A6A943700EC0AF3 /* LLDumperData.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D97B62517AA61330019CDAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D789CD017AD02ED001534DD /* Icons */,
+				6D789CCF17AD02E9001534DD /* Images */,
+				6D780BC9185FCB7E0099CEEE /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6D97B62717AA615A0019CDAF /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD81185FCAB60079122E /* LLDumperDocument.h */,
+				6DA9AD83185FCAB60079122E /* LLDumperDocument+Private.h */,
+				6DA9AD82185FCAB60079122E /* LLDumperDocument.m */,
+				6D97B6BC17AA7C500019CDAF /* Model */,
+				6D97B6AE17AA73600019CDAF /* User Interface */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+		6D97B62D17AA63630019CDAF /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD6B185FCA710079122E /* LLDumperWelcomeWindowController.h */,
+				6DA9AD6C185FCA710079122E /* LLDumperWelcomeWindowController.m */,
+				6DA9AD67185FCA610079122E /* LLDumperWelcomeWindow.xib */,
+				6D841CA417AEB46A003D324C /* Model */,
+				6D841C9917AEB257003D324C /* Controls */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		6D97B6AA17AA690C0019CDAF /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9ADAB185FCB3E0079122E /* Dumper-Constants.h */,
+				6DA9ADAC185FCB3E0079122E /* Dumper-Constants.m */,
+				6DA9ADAD185FCB3E0079122E /* Dumper-Defaults.h */,
+				6DA9ADAE185FCB3E0079122E /* Dumper-Defaults.m */,
+				6DA9ADAF185FCB3E0079122E /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6D97B6AE17AA73600019CDAF /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD88185FCAD10079122E /* LLDumperDocumentWindowController.h */,
+				6DA9AD8A185FCAD10079122E /* LLDumperDocumentWindowController+Private.h */,
+				6DA9AD89185FCAD10079122E /* LLDumperDocumentWindowController.m */,
+				6DA9AD8C185FCADB0079122E /* LLDumperDocumentWindow.xib */,
+				6D97B6C517AA8F760019CDAF /* Loading */,
+				6D97B6B417AA74A30019CDAF /* Class List Sidebar */,
+				6D97B6B517AA74B40019CDAF /* Class Details */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		6D97B6B417AA74A30019CDAF /* Class List Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD9C185FCB100079122E /* LLDumperHeaderListViewController.h */,
+				6DA9AD9D185FCB100079122E /* LLDumperHeaderListViewController.m */,
+				6DA9ADA5185FCB210079122E /* LLDumperHeaderListView.xib */,
+				6DA9AD9E185FCB100079122E /* LLDumperTableView.h */,
+				6DA9AD9F185FCB100079122E /* LLDumperTableView.m */,
+			);
+			name = "Class List Sidebar";
+			sourceTree = "<group>";
+		};
+		6D97B6B517AA74B40019CDAF /* Class Details */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD9A185FCB100079122E /* LLDumperHeaderDetailsViewController.h */,
+				6DA9AD9B185FCB100079122E /* LLDumperHeaderDetailsViewController.m */,
+				6DA9ADA3185FCB210079122E /* LLDumperHeaderDetailsView.xib */,
+			);
+			name = "Class Details";
+			sourceTree = "<group>";
+		};
+		6D97B6BC17AA7C500019CDAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD85185FCAC10079122E /* LLDumperHeader.h */,
+				6DA9AD86185FCAC10079122E /* LLDumperHeader.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6D97B6C517AA8F760019CDAF /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD90185FCAE80079122E /* LLDumperExecutableLoadingViewController.h */,
+				6DA9AD91185FCAE80079122E /* LLDumperExecutableLoadingViewController.m */,
+				6DA9AD93185FCAF30079122E /* LLDumperExecutableLoadingView.xib */,
+				6DA9AD97185FCAFE0079122E /* LLDumperDropZoneView.h */,
+				6DA9AD98185FCAFE0079122E /* LLDumperDropZoneView.m */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		6D9F77A71905416900745AFD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F77A81905419400745AFD /* NSURL+LLDumperExtensions.h */,
+				6D9F77A91905419400745AFD /* NSURL+LLDumperExtensions.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6D9F77FD19056CE900745AFD /* CLI Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBB4AB1910517400D4DE07 /* main.m */,
+				6D9F780919056D2F00745AFD /* Supporting Files */,
+			);
+			name = "CLI Tool";
+			path = dumper;
+			sourceTree = "<group>";
+		};
+		6D9F780919056D2F00745AFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DFBB4AA1910517400D4DE07 /* dumper.1 */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DC9717917AD9C6A00275B58 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9AD7A185FCAA10079122E /* LLDumperPreferencesWindowController.h */,
+				6DA9AD7B185FCAA10079122E /* LLDumperPreferencesWindowController.m */,
+				6DA9AD7D185FCAAA0079122E /* LLDumperPreferencesWindow.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D838F2E17A6F7C60066B02B /* Dumper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D838F6017A6F7C60066B02B /* Build configuration list for PBXNativeTarget "Dumper" */;
+			buildPhases = (
+				6D838F2B17A6F7C60066B02B /* Sources */,
+				6D838F2C17A6F7C60066B02B /* Frameworks */,
+				6D838F2D17A6F7C60066B02B /* Resources */,
+				6D8BDE0317AD3D6500805AAA /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D9777F21A6A944700EC0AF3 /* PBXTargetDependency */,
+				6D9777F01A6A944400EC0AF3 /* PBXTargetDependency */,
+			);
+			name = Dumper;
+			productName = Dumper;
+			productReference = 6D838F2F17A6F7C60066B02B /* Dumper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D838F4F17A6F7C60066B02B /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D838F6317A6F7C60066B02B /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				6D838F4C17A6F7C60066B02B /* Sources */,
+				6D838F4D17A6F7C60066B02B /* Frameworks */,
+				6D838F4E17A6F7C60066B02B /* Resources */,
+				6D21B12017B018FF006ED2F0 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D838F5517A6F7C60066B02B /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = DumperTests;
+			productReference = 6D838F5017A6F7C60066B02B /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D838F2717A6F7C60066B02B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LLDumper;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Damien DeVille";
+				TargetAttributes = {
+					6D838F2E17A6F7C60066B02B = {
+						DevelopmentTeam = P97H7FTHWN;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					6D838F4F17A6F7C60066B02B = {
+						TestTargetID = 6D838F2E17A6F7C60066B02B;
+					};
+				};
+			};
+			buildConfigurationList = 6D838F2A17A6F7C60066B02B /* Build configuration list for PBXProject "Dumper Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D838F2617A6F7C60066B02B;
+			productRefGroup = 6D838F3017A6F7C60066B02B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D9777CB1A6A941600EC0AF3 /* Products */;
+					ProjectRef = 6D9777CA1A6A941600EC0AF3 /* class-dump.xcodeproj */;
+				},
+				{
+					ProductGroup = 6D9777E41A6A943700EC0AF3 /* Products */;
+					ProjectRef = 6D9777E31A6A943700EC0AF3 /* Dumper Common.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6D838F2E17A6F7C60066B02B /* Dumper */,
+				6D838F4F17A6F7C60066B02B /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D9777D61A6A941700EC0AF3 /* libMachObjC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMachObjC.a;
+			remoteRef = 6D9777D51A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777D81A6A941700EC0AF3 /* class-dump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "class-dump";
+			remoteRef = 6D9777D71A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777DA1A6A941700EC0AF3 /* ClassDump.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ClassDump.framework;
+			remoteRef = 6D9777D91A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777DC1A6A941700EC0AF3 /* com.ddeville.classdumpservice.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = com.ddeville.classdumpservice.xpc;
+			remoteRef = 6D9777DB1A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777DE1A6A941700EC0AF3 /* deprotect */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = deprotect;
+			remoteRef = 6D9777DD1A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777E01A6A941700EC0AF3 /* formatType */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = formatType;
+			remoteRef = 6D9777DF1A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777E21A6A941700EC0AF3 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = 6D9777E11A6A941700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D9777EA1A6A943700EC0AF3 /* LLDumperData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LLDumperData.framework;
+			remoteRef = 6D9777E91A6A943700EC0AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D838F2D17A6F7C60066B02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA9ADBD185FCB5B0079122E /* dropzone_down.png in Resources */,
+				6D780BCF185FCBA40099CEEE /* InfoPlist.strings in Resources */,
+				6D780BCB185FCB7E0099CEEE /* Credits.rtf in Resources */,
+				6DA9ADA8185FCB210079122E /* LLDumperHeaderListView.xib in Resources */,
+				6DA9ADB6185FCB500079122E /* DumperDocument.iconset in Resources */,
+				6DA9ADA7185FCB210079122E /* LLDumperHeaderDetailsView.xib in Resources */,
+				6DA9ADB5185FCB500079122E /* Dumper.iconset in Resources */,
+				6DA9ADC0185FCB5B0079122E /* dropzone@2x.png in Resources */,
+				6DA9ADBC185FCB5B0079122E /* c-header_Icon.icns in Resources */,
+				6DA9AD69185FCA610079122E /* LLDumperWelcomeWindow.xib in Resources */,
+				6DA9AD7F185FCAAA0079122E /* LLDumperPreferencesWindow.xib in Resources */,
+				6DA9AD8E185FCADB0079122E /* LLDumperDocumentWindow.xib in Resources */,
+				6DA9ADBE185FCB5B0079122E /* dropzone_down@2x.png in Resources */,
+				6DA9AD95185FCAF30079122E /* LLDumperExecutableLoadingView.xib in Resources */,
+				6DA9ADBF185FCB5B0079122E /* dropzone.png in Resources */,
+				6DA9AD65185FCA500079122E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D838F4E17A6F7C60066B02B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEF2266185FC5BF00FCFB55 /* app_as_a_file.app in Resources */,
+				6DEF226A185FC5CE00FCFB55 /* InfoPlist.strings in Resources */,
+				6DEF2267185FC5C200FCFB55 /* empty_app.app in Resources */,
+				6DEF2269185FC5C700FCFB55 /* only_c in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D838F2B17A6F7C60066B02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA9AD92185FCAE80079122E /* LLDumperExecutableLoadingViewController.m in Sources */,
+				6DA9AD5B185FCA3A0079122E /* LLDumperApplication.m in Sources */,
+				6DA9AD99185FCAFE0079122E /* LLDumperDropZoneView.m in Sources */,
+				6DA9AD84185FCAB60079122E /* LLDumperDocument.m in Sources */,
+				6DA9AD6D185FCA710079122E /* LLDumperWelcomeWindowController.m in Sources */,
+				6DA9AD77185FCA910079122E /* LLDumperBorderedScrollView.m in Sources */,
+				6DA9ADB1185FCB3E0079122E /* Dumper-Defaults.m in Sources */,
+				6DA9ADA0185FCB100079122E /* LLDumperHeaderDetailsViewController.m in Sources */,
+				6DA9AD79185FCA910079122E /* LLDumperSelectableTableView.m in Sources */,
+				6DA9AD70185FCA790079122E /* LLDumperRecentDocument.m in Sources */,
+				6DA9AD8B185FCAD10079122E /* LLDumperDocumentWindowController.m in Sources */,
+				6DA9AD7C185FCAA10079122E /* LLDumperPreferencesWindowController.m in Sources */,
+				6DA9ADA1185FCB100079122E /* LLDumperHeaderListViewController.m in Sources */,
+				6DA9ADB0185FCB3E0079122E /* Dumper-Constants.m in Sources */,
+				6D9F77AA1905419400745AFD /* NSURL+LLDumperExtensions.m in Sources */,
+				6DA9ADA2185FCB100079122E /* LLDumperTableView.m in Sources */,
+				6DA9AD78185FCA910079122E /* LLDumperColoredBackgroundView.m in Sources */,
+				6DA9ADB2185FCB3E0079122E /* main.m in Sources */,
+				6DA9AD87185FCAC10079122E /* LLDumperHeader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D838F4C17A6F7C60066B02B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA9AD52185FC8CA0079122E /* LLDumperTests-Constants.m in Sources */,
+				6DA9AD54185FC8CE0079122E /* LLDumperClassDumpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D838F5517A6F7C60066B02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D838F2E17A6F7C60066B02B /* Dumper */;
+			targetProxy = 6D838F5417A6F7C60066B02B /* PBXContainerItemProxy */;
+		};
+		6D9777F01A6A944400EC0AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LLDumperData;
+			targetProxy = 6D9777EF1A6A944400EC0AF3 /* PBXContainerItemProxy */;
+		};
+		6D9777F21A6A944700EC0AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ClassDump;
+			targetProxy = 6D9777F11A6A944700EC0AF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D780BC9185FCB7E0099CEEE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D780BCA185FCB7E0099CEEE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6D780BCD185FCBA40099CEEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D780BCE185FCBA40099CEEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6DA9AD63185FCA500079122E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9AD64185FCA500079122E /* Base */,
+				6DA9AD66185FCA560079122E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		6DA9AD67185FCA610079122E /* LLDumperWelcomeWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9AD68185FCA610079122E /* Base */,
+				6DA9AD6A185FCA660079122E /* en */,
+			);
+			name = LLDumperWelcomeWindow.xib;
+			sourceTree = "<group>";
+		};
+		6DA9AD7D185FCAAA0079122E /* LLDumperPreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9AD7E185FCAAA0079122E /* Base */,
+				6DA9AD80185FCAAD0079122E /* en */,
+			);
+			name = LLDumperPreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		6DA9AD8C185FCADB0079122E /* LLDumperDocumentWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9AD8D185FCADB0079122E /* Base */,
+				6DA9AD8F185FCADE0079122E /* en */,
+			);
+			name = LLDumperDocumentWindow.xib;
+			sourceTree = "<group>";
+		};
+		6DA9AD93185FCAF30079122E /* LLDumperExecutableLoadingView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9AD94185FCAF30079122E /* Base */,
+				6DA9AD96185FCAF60079122E /* en */,
+			);
+			name = LLDumperExecutableLoadingView.xib;
+			sourceTree = "<group>";
+		};
+		6DA9ADA3185FCB210079122E /* LLDumperHeaderDetailsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9ADA4185FCB210079122E /* Base */,
+				6DA9ADAA185FCB2F0079122E /* en */,
+			);
+			name = LLDumperHeaderDetailsView.xib;
+			sourceTree = "<group>";
+		};
+		6DA9ADA5185FCB210079122E /* LLDumperHeaderListView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA9ADA6185FCB210079122E /* Base */,
+				6DA9ADA9185FCB290079122E /* en */,
+			);
+			name = LLDumperHeaderListView.xib;
+			sourceTree = "<group>";
+		};
+		6DEF2261185FC57000FCFB55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEF2262185FC57000FCFB55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D3C7C7C185D1A39007C5AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"${BUILD_DIR}/Release\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = LL_BUILD_RELEASE;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6D3C7C7D185D1A39007C5AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dumper Mac/Dumper.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Dumper Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6D3C7C7E185D1A39007C5AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dumper.app/Contents/MacOS/Dumper";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		6D838F5E17A6F7C60066B02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					LL_BUILD_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6D838F6117A6F7C60066B02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Dumper Mac/Dumper.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Dumper Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6D838F6417A6F7C60066B02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dumper.app/Contents/MacOS/Dumper";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D838F2A17A6F7C60066B02B /* Build configuration list for PBXProject "Dumper Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D838F5E17A6F7C60066B02B /* Debug */,
+				6D3C7C7C185D1A39007C5AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D838F6017A6F7C60066B02B /* Build configuration list for PBXNativeTarget "Dumper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D838F6117A6F7C60066B02B /* Debug */,
+				6D3C7C7D185D1A39007C5AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D838F6317A6F7C60066B02B /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D838F6417A6F7C60066B02B /* Debug */,
+				6D3C7C7E185D1A39007C5AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D838F2717A6F7C60066B02B /* Project object */;
+}

@@ -1,0 +1,18 @@
+
+/* Class = "NSMenuItem"; title = "Open in External Editor"; ObjectID = "GEF-IT-BHc"; */
+"GEF-IT-BHc.title" = "Open in External Editor";
+
+/* Class = "IBBindingConnection"; ibShadowedDisplayName = "predicate"; ObjectID = "WCW-Kt-7Ib"; */
+"WCW-Kt-7Ib.ibShadowedDisplayName" = "predicate";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "XvF-Fn-5Kl"; */
+"XvF-Fn-5Kl.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "e4T-cp-ydH"; */
+"e4T-cp-ydH.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "fBe-Rf-VL1"; */
+"fBe-Rf-VL1.title" = "Table View Cell";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "sZw-Ia-mDd"; */
+"sZw-Ia-mDd.placeholderString" = "Filter";
